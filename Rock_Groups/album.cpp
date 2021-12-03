@@ -1,6 +1,7 @@
 #include "album.h"
 
-album::album(unsigned year, string alname)
+album::album(string aband, unsigned year, string alname) :
+	band(aband)
 {
 	SetalbumName(alname);
 	SetRyear(year);
@@ -30,6 +31,8 @@ int album::GetRyear() const
 
 ostream& operator<<(ostream& s, const album& p)
 {
-	s << "Íàçâàíèå àëüáîìà - " << p.album_name << ", ãîä âûïóñêà - " << p.realsile_year << endl;
+
+	s << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã Ã«Ã¼Ã¡Ã®Ã¬Ã  - " << p.album_name << ", Ã£Ã®Ã¤ Ã¢Ã»Ã¯Ã³Ã±ÃªÃ  - " << p.realsile_year <<", Ã°Ã®Ãª-Ã£Ã°Ã³Ã¯Ã¯Ã  - " << p.band_name << endl;
+
 	return s;
 }

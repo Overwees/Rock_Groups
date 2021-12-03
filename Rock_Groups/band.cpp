@@ -16,6 +16,8 @@ string band::GetBandName() const
 
 ostream& operator<<(ostream& s, const band& p)
 {
-	s << "Íàçâàíèå ðîê ãðóïïû: " << p.band_name;
+
+	s << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã°Ã®Ãª Ã£Ã°Ã³Ã¯Ã¯Ã»: " << p.band_name ;
+
 	return s;
 }

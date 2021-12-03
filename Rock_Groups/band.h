@@ -6,9 +6,8 @@ class band
 {
 protected:
 	string band_name;
-
 public:
-	band(string bname);
+	band(string bname=" ");
 	void SetBandName(string bname);
 	string GetBandName()const;
 	friend ostream& operator<<(ostream&, const band&);

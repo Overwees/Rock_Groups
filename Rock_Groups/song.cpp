@@ -1,6 +1,7 @@
 #include "song.h"
 
-song::song(string sname, double dur)
+song::song(string aband,string sname, double dur):
+	band(aband)
 {
 	SetSongName(sname);
 	SetDuration(dur);
@@ -30,6 +31,7 @@ double song::GetDuration() const
 
 ostream& operator<<(ostream& s, const song& p)
 {
-	s << "Íàçâàíèå ïåñíè - " << p.song_name << ", ïðîäîëæèòåëüíîñòü - " << p.song_duration << endl;
+
+	s << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã¥Ã±Ã­Ã¨ - " << p.song_name << ", Ã¯Ã°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã±Ã²Ã¼ - " << p.song_duration <<", Ã°Ã®Ãª-Ã£Ã°Ã³Ã¯Ã¯Ã  - " << p.band_name<< endl;
 	return s;
 }
