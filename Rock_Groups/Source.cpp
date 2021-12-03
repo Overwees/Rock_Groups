@@ -9,7 +9,9 @@
 using namespace std;
 int main()
 {
+
 	setlocale(LC_ALL, "rus");
+
 	unsigned numb;
 	string bandname;
 	vector <album> albums;
@@ -17,11 +19,11 @@ int main()
 	vector <song> songs;
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	cout << "Ââåäèòå èìÿ ðîê ãðóïïû:";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿ Ã°Ã®Ãª Ã£Ã°Ã³Ã¯Ã¯Ã»:";
 	getline(cin, bandname);
 	band Rockg(bandname);
 
-	cout << "Ââåäèòå ÷èñëî ìóçûêàíòîâ:";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã¬Ã³Ã§Ã»ÃªÃ Ã­Ã²Ã®Ã¢:";
 	cin >> numb;
 	cin.ignore(1, '\n');
 	for (unsigned i = 0; i < numb; i++)
@@ -29,12 +31,12 @@ int main()
 		string mname;
 		string speciallity;
 		int year;
-		cout << i + 1 << "-é ìóçûêàíò" << endl;
-		cout << "Èìÿ:";
+		cout << i + 1 << "-Ã© Ã¬Ã³Ã§Ã»ÃªÃ Ã­Ã²" << endl;
+		cout << "ÃˆÃ¬Ã¿:";
 		getline(cin, mname);
-		cout << "Ñïåöèàëèçàöèÿ:";
+		cout << "Ã‘Ã¯Ã¥Ã¶Ã¨Ã Ã«Ã¨Ã§Ã Ã¶Ã¨Ã¿:";
 		getline(cin, speciallity);
-		cout << "Ãîä ðîæäåíèÿ:";
+		cout << "ÃƒÃ®Ã¤ Ã°Ã®Ã¦Ã¤Ã¥Ã­Ã¨Ã¿:";
 		cin >> year;
 		cin.ignore(1, '\n');
 		try
@@ -50,17 +52,17 @@ int main()
 	}
 
 
-	cout << "Ââåäèòå êîë-âî àëüáîìîâ:";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«-Ã¢Ã® Ã Ã«Ã¼Ã¡Ã®Ã¬Ã®Ã¢:";
 	cin >> numb;
 	cin.ignore(1, '\n');
 	for (unsigned i = 0; i < numb; i++)
 	{
 		int year;
 		string aname;
-		cout << i + 1 << "-é àëüáîì" << endl;
-		cout << "Íàçâàíèå:";
+		cout << i + 1 << "-Ã© Ã Ã«Ã¼Ã¡Ã®Ã¬" << endl;
+		cout << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥:";
 		getline(cin, aname);
-		cout << "Ãîä âûïóñêà:";
+		cout << "ÃƒÃ®Ã¤ Ã¢Ã»Ã¯Ã³Ã±ÃªÃ :";
 		cin >> year;
 		cin.ignore(1, '\n');
 		try
@@ -76,17 +78,19 @@ int main()
 	}
 
 
-	cout << "Ââåäèòå êîë-âî ïåñåí:";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«-Ã¢Ã® Ã¯Ã¥Ã±Ã¥Ã­:";
 	cin >> numb;
 	cin.ignore(1, '\n');
 	for (unsigned i = 0; i < numb; i++)
 	{
 		string sname;
 		double dur;
-		cout << i + 1 << "-ÿ ïåñíÿ" << endl;
-		cout << "Íàçâàíèå:";
+
+		cout << i + 1 << "-Ã¿ Ã¯Ã¥Ã±Ã­Ã¿" << endl;
+
+		cout << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥:";
 		getline(cin, sname);
-		cout << "Ïðîäîëæèòåëüíîñòü(â ìèíóòàõ):";
+		cout << "ÃÃ°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã±Ã²Ã¼(Ã¢ Ã¬Ã¨Ã­Ã³Ã²Ã Ãµ):";
 		cin >> dur;
 		cin.ignore(1, '\n');
 		try
@@ -104,6 +108,7 @@ int main()
 	cout << "===============================" << endl;
 	cout << Rockg << endl;
 	cout << "===============================" << endl;
+
 	for (unsigned i = 0; i < musicians.size(); i++)
 	{
 		cout << musicians[i];

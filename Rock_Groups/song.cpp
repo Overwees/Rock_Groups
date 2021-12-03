@@ -31,6 +31,7 @@ double song::GetDuration() const
 
 ostream& operator<<(ostream& s, const song& p)
 {
-	s << "Íàçâàíèå ïåñíè - " << p.song_name << ", ïðîäîëæèòåëüíîñòü - " << p.song_duration <<", ðîê-ãðóïïà - " << p.band_name<< endl;
+
+	s << "ÃÃ Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã¥Ã±Ã­Ã¨ - " << p.song_name << ", Ã¯Ã°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¥Ã«Ã¼Ã­Ã®Ã±Ã²Ã¼ - " << p.song_duration <<", Ã°Ã®Ãª-Ã£Ã°Ã³Ã¯Ã¯Ã  - " << p.band_name<< endl;
 	return s;
 }

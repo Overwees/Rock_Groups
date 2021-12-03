@@ -3,7 +3,6 @@
 musician::musician(string aband,string mname, string spec, int year):
     band(aband)
 {
-    
     SetMusicianName(mname);
     SetInstrument(spec);
     SetBirthYear(year);
@@ -43,6 +42,6 @@ int musician::GetBirthYear() const
 
 ostream& operator<<(ostream& s, const musician& p)
 {
-    s << "Èìÿ ìóçûêàíòà - " << p.musician_name << ", Ñïåöèàëèçàöèÿ - " << p.speciallity <<", ×ëåí ðîê-ãðóïïû - " << p.band_name << '\n';
+    s << "ÃˆÃ¬Ã¿ Ã¬Ã³Ã§Ã»ÃªÃ Ã­Ã²Ã  - " << p.musician_name << ", Ã‘Ã¯Ã¥Ã¶Ã¨Ã Ã«Ã¨Ã§Ã Ã¶Ã¨Ã¿ - " << p.speciallity <<", Ã—Ã«Ã¥Ã­ Ã°Ã®Ãª-Ã£Ã°Ã³Ã¯Ã¯Ã» - " << p.band_name << '\n';
     return s;
 }

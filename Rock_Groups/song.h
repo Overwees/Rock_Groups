@@ -11,7 +11,9 @@ protected:
 	string song_name;
 	double song_duration;
 public:
+
 	song(string aband=" ",string sname = " ", double dur = 0);
+
 	void SetSongName(string sname);
 	string GetSongName()const;
 	void SetDuration(double dur = 0);

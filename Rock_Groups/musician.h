@@ -5,13 +5,14 @@
 using namespace std;
 class musician:
 	public band
+
 {
 protected:
 	string musician_name;
 	string speciallity;
 	int birth_year;
 public:
-	musician(string aband,string mname=" ", string spec = " ", int year = 0);
+	musician(string aband=" ",string mname=" ", string spec = " ", int year = 0);
 	void SetMusicianName(string mname);
 	string GetMusicianName()const;
 	void SetInstrument(string instr);
